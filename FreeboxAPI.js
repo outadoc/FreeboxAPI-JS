@@ -19,7 +19,7 @@ function getXMLHttpRequest() {
 }
 
 var FreeboxKey = {
-     NUM_ONE:'1',
+    NUM_ONE:'1',
     NUM_TWO:'2',
     NUM_THREE:'3',
     NUM_FOUR:'4',
@@ -77,7 +77,7 @@ function Freebox(hd, code) {
         this.xhr.open('GET', url, true);
 		this.xhr.send(null);
     };
-        
+    
     this.callChannel = function(channel) {
         channel = String(channel);
         	
@@ -97,7 +97,7 @@ function Freebox(hd, code) {
     	}
     	return 1;
     };
-
+    
     this.getCode = function() {
     	return this.code;
     };
@@ -110,7 +110,7 @@ function Freebox(hd, code) {
     this.getHd = function() {
     	return this.hd;
     };
-
+    
     this.setHd(hd);
     this.setCode(code);
     this.xhr = getXMLHttpRequest();
